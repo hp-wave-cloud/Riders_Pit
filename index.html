@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotoParts — Premium motorcycle parts, riding gear, helmets and accessories. Free shipping above ₹2,500. Pan-India delivery.">
+  <meta name="keywords" content="motorcycle parts, riding gear, helmets, bike accessories, India">
+  <meta property="og:title" content="MotoParts — Gear Up. Ride On.">
+  <meta property="og:description" content="Premium motorcycle parts and riding gear for Indian riders.">
+  <title>MotoParts — Gear Up. Ride On.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar" id="announceBar">
+    <div class="announce-track">
+      <span>🏍️ FREE SHIPPING on orders above ₹2,500</span>
+      <span class="sep">|</span>
+      <span>COD Available Pan-India</span>
+      <span class="sep">|</span>
+      <span>24hr Dispatch on Stocked Items</span>
+      <span class="sep">|</span>
+      <span>🏍️ FREE SHIPPING on orders above ₹2,500</span>
+      <span class="sep">|</span>
+      <span>COD Available Pan-India</span>
+      <span class="sep">|</span>
+      <span>24hr Dispatch on Stocked Items</span>
+    </div>
+    <button class="announce-close" onclick="document.getElementById('announceBar').style.display='none'" aria-label="Close">✕</button>
+  </div>
+
+  <!-- UTILITY BAR -->
+  <div class="utility-bar">
+    <div class="util-left">
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#track">Order Tracking</a>
+      <a href="#wishlist">Wishlist</a>
+      <a href="#blog">Blog</a>
+    </div>
+    <div class="util-right">
+      <span>📞 +91 98765 43210</span>
+      <span class="util-sep">|</span>
+      <span>support@yourstore.in</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="header-inner">
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="logo">
+        MOTO<span class="logo-accent">PARTS</span>
+        <small>YOUR TAGLINE HERE</small>
+      </a>
+
+      <div class="search-wrap">
+        <form class="search-bar" role="search" onsubmit="return false">
+          <input type="search" id="searchInput" placeholder="Search by part, bike model, brand..." aria-label="Search products">
+          <button type="submit" aria-label="Search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="header-actions">
+        <a href="#account" class="action-btn" aria-label="My Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="#wishlist" class="action-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Wishlist</span>
+        </a>
+        <button class="action-btn cart-btn" id="cartBtn" aria-label="Cart">
+          <span class="cart-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="cart-badge" id="cartBadge">3</span>
+          </span>
+          <span>Cart</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN NAV -->
+  <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="has-mega">
+          <a href="#helmets" class="nav-link">Helmets <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <div class="mega-heading">By Type</div>
+              <a href="#">Full Face</a><a href="#">Half Face</a><a href="#">Open Face</a><a href="#">Modular / Flip</a><a href="#">Off-Road</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-heading">By Brand</div>
+              <a href="#">AXOR</a><a href="#">LS2</a><a href="#">Vega</a><a href="#">Steelbird</a><a href="#">BILT</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-heading">By Budget</div>
+              <a href="#">Under ₹1,500</a><a href="#">₹1,500 – ₹3,000</a><a href="#">₹3,000 – ₹6,000</a><a href="#">Above ₹6,000</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-mega">
+          <a href="#gear" class="nav-link">Riding Gear <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <div class="mega-heading">Clothing</div>
+              <a href="#">Jackets</a><a href="#">Pants</a><a href="#">Gloves</a><a href="#">Boots</a><a href="#">Rain Gear</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-heading">Protection</div>
+              <a href="#">Knee Guards</a><a href="#">Back Protectors</a><a href="#">Chest Guards</a><a href="#">Full Suits</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-mega">
+          <a href="#maintenance" class="nav-link">Maintenance <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <div class="mega-heading">Fluids</div>
+              <a href="#">Engine Oils</a><a href="#">Brake Fluid</a><a href="#">Coolant</a><a href="#">Chain Lube</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-heading">Filters & Parts</div>
+              <a href="#">Air Filters</a><a href="#">Oil Filters</a><a href="#">Spark Plugs</a><a href="#">Brake Pads</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#accessories" class="nav-link">Accessories</a></li>
+        <li><a href="#chains" class="nav-link">Chain & Sprockets</a></li>
+        <li><a href="#tyres" class="nav-link">Tyres</a></li>
+        <li><a href="#new" class="nav-link">New Arrivals</a></li>
+        <li><a href="#sale" class="nav-link sale-link">🔥 On Sale</a></li>
+      </ul>
+      <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">✕</button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <main>
+
+    <!-- HERO SLIDER -->
+    <section class="hero" aria-label="Featured promotions">
+      <div class="hero-slides" id="heroSlides">
+
+        <div class="hero-slide slide-1 active">
+          <div class="hero-bg-text">GP</div>
+          <div class="hero-content">
+            <p class="hero-tag">New Arrival — 2025 Collection</p>
+            <h1 class="hero-title">RIDE<br><em>PROTECTED.</em><br>RIDE PROUD.</h1>
+            <p class="hero-sub">Premium riding gear, helmets &amp; parts for every Indian rider. ISI-certified. Nation-wide delivery.</p>
+            <div class="hero-btns">
+              <a href="#helmets" class="btn-primary">Shop Helmets →</a>
+              <a href="#sale" class="btn-ghost">View Deals</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-icon-bg">⛑️</div>
+          </div>
+        </div>
+
+        <div class="hero-slide slide-2">
+          <div class="hero-bg-text">KIT</div>
+          <div class="hero-content">
+            <p class="hero-tag">Maintenance Season Sale — Up to 30% Off</p>
+            <h1 class="hero-title">KEEP YOUR<br>BIKE<br><em>RUNNING.</em></h1>
+            <p class="hero-sub">Genuine oils, filters, chain kits and cleaners. Trusted brands. Unbeatable prices.</p>
+            <div class="hero-btns">
+              <a href="#maintenance" class="btn-primary">Shop Maintenance →</a>
+              <a href="#deals" class="btn-ghost">Weekly Deals</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-icon-bg">🔧</div>
+          </div>
+        </div>
+
+        <div class="hero-slide slide-3">
+          <div class="hero-bg-text">GO</div>
+          <div class="hero-content">
+            <p class="hero-tag">Riding Gear — Rynox &amp; More</p>
+            <h1 class="hero-title">GEAR UP.<br><em>RIDE ON.</em><br>STAY SAFE.</h1>
+            <p class="hero-sub">CE Level 2 certified jackets, gloves, boots and protection for the serious rider.</p>
+            <div class="hero-btns">
+              <a href="#gear" class="btn-primary">Shop Gear →</a>
+              <a href="#brands" class="btn-ghost">Our Brands</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-icon-bg">🦺</div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="slide-btn slide-prev" id="slidePrev" aria-label="Previous slide">&#8592;</button>
+      <button class="slide-btn slide-next" id="slideNext" aria-label="Next slide">&#8594;</button>
+
+      <div class="slide-dots" id="slideDots">
+        <button class="slide-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="slide-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="slide-dot" data-index="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- PROMO CATEGORY GRID -->
+    <section class="promo-grid" aria-label="Shop by category">
+      <a href="#helmets" class="promo-tile">
+        <span class="promo-icon">⛑️</span>
+        <span class="promo-label">Helmets</span>
+      </a>
+      <a href="#gear" class="promo-tile">
+        <span class="promo-icon">🧤</span>
+        <span class="promo-label">Gloves</span>
+      </a>
+      <a href="#jackets" class="promo-tile">
+        <span class="promo-icon">🦺</span>
+        <span class="promo-label">Jackets</span>
+      </a>
+      <a href="#maintenance" class="promo-tile">
+        <span class="promo-icon">🔧</span>
+        <span class="promo-label">Maintenance</span>
+      </a>
+      <a href="#chains" class="promo-tile">
+        <span class="promo-icon">⛓️</span>
+        <span class="promo-label">Chain Kits</span>
+      </a>
+      <a href="#accessories" class="promo-tile">
+        <span class="promo-icon">💡</span>
+        <span class="promo-label">Accessories</span>
+      </a>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar" aria-label="Why shop with us">
+      <div class="trust-item">
+        <span class="trust-icon">🚚</span>
+        <div class="trust-text">
+          <strong>Free Shipping</strong>
+          <span>On orders above ₹2,500</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✅</span>
+        <div class="trust-text">
+          <strong>100% Genuine Parts</strong>
+          <span>Authorised dealer network</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">↩️</span>
+        <div class="trust-text">
+          <strong>7-Day Returns</strong>
+          <span>Hassle-free return policy</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">📞</span>
+        <div class="trust-text">
+          <strong>Expert Support</strong>
+          <span>Mon–Sat, 9 AM – 7 PM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="product-section" id="bestsellers">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">BEST <em>SELLERS</em></h2>
+          <a href="#shop" class="view-all">View All Products →</a>
+        </div>
+        <div class="product-grid" id="bestsellerGrid">
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-sale">SALE</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">⛑️</div>
+            <div class="product-info">
+              <p class="product-brand">AXOR</p>
+              <h3 class="product-name">Street Naked Full Face Helmet — Gloss Black</h3>
+              <div class="product-pricing">
+                <span class="price-current">₹4,499</span>
+                <span class="price-old">₹5,499</span>
+                <span class="price-discount">-18%</span>
+              </div>
+              <div class="product-rating">★★★★☆ <span>(124)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">🧤</div>
+            <div class="product-info">
+              <p class="product-brand">RYNOX</p>
+              <h3 class="product-name">Air GT 3 Riding Gloves — Black/Orange</h3>
+              <div class="product-pricing">
+                <span class="price-current">₹1,799</span>
+              </div>
+              <div class="product-rating">★★★★★ <span>(87)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-sale">SALE</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">⛓️</div>
+            <div class="product-info">
+              <p class="product-brand">DID</p>
+              <h3 class="product-name">Chain Sprocket Kit — Pulsar NS200 / RS200</h3>
+              <div class="product-pricing">
+                <span class="price-current">₹2,199</span>
+                <span class="price-old">₹2,799</span>
+                <span class="price-discount">-21%</span>
+              </div>
+              <div class="product-rating">★★★★☆ <span>(56)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">🦺</div>
+            <div class="product-info">
+              <p class="product-brand">RYNOX</p>
+              <h3 class="product-name">Grid Pro Mesh Jacket — CE Level 2 Armour</h3>
+              <div class="product-pricing">
+                <span class="price-current">₹8,499</span>
+              </div>
+              <div class="product-rating">★★★★★ <span>(201)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKLY DEALS -->
+    <section class="deals-section" id="deals">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">WEEKLY <em>DEALS</em></h2>
+          <a href="#sale" class="view-all">See All Offers →</a>
+        </div>
+        <div class="deals-layout">
+
+          <div class="deal-hero-card">
+            <p class="deal-tag">Limited Time Offer</p>
+            <h3 class="deal-title">Up to<br><span class="deal-pct">30%</span><br>OFF on<br>Maintenance</h3>
+            <p class="deal-sub">Engine oils, filters, chain kits & more</p>
+            <p class="deal-ends">Deal ends in:</p>
+            <div class="countdown" id="countdown">
+              <div class="count-block"><span class="count-num" id="cntDays">02</span><span class="count-label">Days</span></div>
+              <div class="count-block"><span class="count-num" id="cntHrs">14</span><span class="count-label">Hrs</span></div>
+              <div class="count-block"><span class="count-num" id="cntMin">37</span><span class="count-label">Min</span></div>
+              <div class="count-block"><span class="count-num" id="cntSec">00</span><span class="count-label">Sec</span></div>
+            </div>
+            <a href="#maintenance" class="btn-primary" style="margin-top:20px;display:inline-block">Shop Now →</a>
+          </div>
+
+          <div class="deal-products">
+
+            <article class="product-card">
+              <div class="product-badges"><span class="badge-sale">-25%</span></div>
+              <div class="product-img" style="font-size:56px">🛢️</div>
+              <div class="product-info">
+                <p class="product-brand">MOTUL</p>
+                <h3 class="product-name">10W-40 4T Engine Oil — 1 Litre</h3>
+                <div class="product-pricing">
+                  <span class="price-current">₹549</span>
+                  <span class="price-old">₹729</span>
+                </div>
+                <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badges"><span class="badge-sale">-30%</span></div>
+              <div class="product-img" style="font-size:56px">🔩</div>
+              <div class="product-info">
+                <p class="product-brand">K&amp;N</p>
+                <h3 class="product-name">High Flow Air Filter — Universal 95mm</h3>
+                <div class="product-pricing">
+                  <span class="price-current">₹1,299</span>
+                  <span class="price-old">₹1,849</span>
+                </div>
+                <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badges"><span class="badge-sale">-20%</span></div>
+              <div class="product-img" style="font-size:56px">🧴</div>
+              <div class="product-info">
+                <p class="product-brand">WD-40</p>
+                <h3 class="product-name">Chain Cleaner + Lube Combo Kit</h3>
+                <div class="product-pricing">
+                  <span class="price-current">₹799</span>
+                  <span class="price-old">₹999</span>
+                </div>
+                <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP BY BIKE -->
+    <section class="bike-section" id="shopbybike">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">SHOP BY <em>BIKE MODEL</em></h2>
+          <a href="#parts" class="view-all">All Compatible Parts →</a>
+        </div>
+        <div class="bike-grid">
+          <a href="#bajaj" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">Bajaj Pulsar</span></a>
+          <a href="#ktm" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">KTM Duke</span></a>
+          <a href="#yamaha" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">Yamaha R15</span></a>
+          <a href="#hero" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">Hero Splendor</span></a>
+          <a href="#honda" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">Honda CB</span></a>
+          <a href="#re" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">Royal Enfield</span></a>
+          <a href="#tvs" class="bike-item"><span class="bike-icon">🏍️</span><span class="bike-label">TVS Apache</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED BRANDS -->
+    <section class="brands-section" id="brands">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">FEATURED <em>BRANDS</em></h2>
+        </div>
+        <div class="brands-grid">
+          <a href="#axor" class="brand-item">AXOR</a>
+          <a href="#rynox" class="brand-item">RYNOX</a>
+          <a href="#motul" class="brand-item">MOTUL</a>
+          <a href="#did" class="brand-item">DID</a>
+          <a href="#kn" class="brand-item">K&amp;N</a>
+          <a href="#ls2" class="brand-item">LS2</a>
+          <a href="#bilt" class="brand-item">BILT</a>
+          <a href="#vega" class="brand-item">VEGA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="product-section" id="new">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NEW <em>ARRIVALS</em></h2>
+          <a href="#shop" class="view-all">View All →</a>
+        </div>
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">👢</div>
+            <div class="product-info">
+              <p class="product-brand">RYNOX</p>
+              <h3 class="product-name">Raid Riding Boots — Brown Leather</h3>
+              <div class="product-pricing"><span class="price-current">₹6,499</span></div>
+              <div class="product-rating">★★★★★ <span>(32)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">🪞</div>
+            <div class="product-info">
+              <p class="product-brand">PUIG</p>
+              <h3 class="product-name">Bar End Mirrors — Carbon Look Universal</h3>
+              <div class="product-pricing"><span class="price-current">₹1,249</span></div>
+              <div class="product-rating">★★★★☆ <span>(18)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">💡</div>
+            <div class="product-info">
+              <p class="product-brand">OSRAM</p>
+              <h3 class="product-name">H4 LED Headlight Bulb — 6000K White</h3>
+              <div class="product-pricing"><span class="price-current">₹899</span></div>
+              <div class="product-rating">★★★★☆ <span>(45)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-badges"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            <div class="product-img">🛡️</div>
+            <div class="product-info">
+              <p class="product-brand">ENDURISTAN</p>
+              <h3 class="product-name">Monsoon Saddlebags — 40L Pair</h3>
+              <div class="product-pricing"><span class="price-current">₹5,999</span></div>
+              <div class="product-rating">★★★★★ <span>(11)</span></div>
+              <button class="add-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-text">
+            <h2>JOIN THE RIDER'S COMMUNITY</h2>
+            <p>Get exclusive deals, product launches, and riding tips straight to your inbox.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit">Subscribe →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand-col">
+          <div class="footer-logo">MOTO<span>PARTS</span></div>
+          <p class="footer-desc">Chennai's trusted destination for motorcycle parts, riding gear, helmets and accessories. Serving riders across Tamil Nadu and all of India since 2021.</p>
+          <p class="footer-gst">GSTIN: 33XXXXX0000X1ZX &nbsp;|&nbsp; CIN: U50000TN2021XXX</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">👥</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">All Products</a></li>
+            <li><a href="#new">New Arrivals</a></li>
+            <li><a href="#sale">Sale Items</a></li>
+            <li><a href="#blog">Blog / Tips</a></li>
+            <li><a href="#track">Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Policies</h4>
+          <ul class="footer-links">
+            <li><a href="shipping.html">Shipping Policy</a></li>
+            <li><a href="returns.html">Return &amp; Refund</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="warranty.html">Warranty Info</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Us</h4>
+          <address class="footer-address">
+            <p><strong>📍 Address</strong><br>
+            Your Store Address,<br>Street Name, Area,<br>Chennai — 600 0XX,<br>Tamil Nadu, India</p>
+            <p><strong>📞 Phone / WhatsApp</strong><br>
+            <a href="tel:+919876543210">+91 98765 43210</a><br>
+            Mon–Sat, 9 AM – 7 PM</p>
+            <p><strong>✉️ Email</strong><br>
+            <a href="mailto:support@yourstore.in">support@yourstore.in</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 MotoParts. All rights reserved. Made with ❤️ in Chennai.</p>
+        <div class="payment-icons">
+          <span class="pay-pill">UPI</span>
+          <span class="pay-pill">Razorpay</span>
+          <span class="pay-pill">Visa</span>
+          <span class="pay-pill">Mastercard</span>
+          <span class="pay-pill">COD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart <span id="cartCount">(3)</span></h3>
+      <button onclick="closeCart()" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-item">
+        <span class="cart-item-icon">⛑️</span>
+        <div class="cart-item-info">
+          <p class="cart-item-name">AXOR Street Helmet</p>
+          <p class="cart-item-price">₹4,499 × 1</p>
+        </div>
+        <button class="cart-item-remove" aria-label="Remove">✕</button>
+      </div>
+      <div class="cart-item">
+        <span class="cart-item-icon">🧤</span>
+        <div class="cart-item-info">
+          <p class="cart-item-name">Rynox Air GT 3 Gloves</p>
+          <p class="cart-item-price">₹1,799 × 1</p>
+        </div>
+        <button class="cart-item-remove" aria-label="Remove">✕</button>
+      </div>
+      <div class="cart-item">
+        <span class="cart-item-icon">🛢️</span>
+        <div class="cart-item-info">
+          <p class="cart-item-name">Motul 10W-40 Engine Oil</p>
+          <p class="cart-item-price">₹549 × 1</p>
+        </div>
+        <button class="cart-item-remove" aria-label="Remove">✕</button>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span><span>₹6,847</span>
+      </div>
+      <p class="cart-shipping-note">✅ Eligible for free shipping!</p>
+      <a href="#checkout" class="btn-primary cart-checkout-btn">Proceed to Checkout →</a>
+      <button onclick="closeCart()" class="cart-continue-btn">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
