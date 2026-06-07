@@ -14,38 +14,10 @@ motoparts/
 └── README.md
 ```
 
-## 🚀 How to Host on GitHub Pages (Free)
-
-### Step 1 — Create a GitHub account
-Go to https://github.com and sign up (free).
-
-### Step 2 — Create a new repository
-1. Click the **+** icon → **New repository**
-2. Name it `motoparts` (or your store name)
-3. Set it to **Public**
-4. Click **Create repository**
-
-### Step 3 — Upload your files
-1. On your repo page, click **Add file → Upload files**
-2. Drag and drop:
-   - `index.html`
+#]
    - The `css/` folder (with `style.css` inside)
    - The `js/` folder (with `main.js` inside)
-3. Click **Commit changes**
-
-### Step 4 — Enable GitHub Pages
-1. Go to your repo → **Settings** tab
-2. Scroll to **Pages** (left sidebar)
-3. Under **Source**, select **Deploy from a branch**
-4. Choose branch: `main`, folder: `/ (root)`
-5. Click **Save**
-
-### Step 5 — Your site is live!
-After 1–2 minutes, your site will be at:
-```
-https://YOUR-GITHUB-USERNAME.github.io/motoparts/
-```
-
+   - 
 ---
 
 ## 🔧 Customise Before Launching
